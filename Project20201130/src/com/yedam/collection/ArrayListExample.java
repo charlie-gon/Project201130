@@ -11,7 +11,7 @@ public class ArrayListExample {
 	public static void main(String[] args) {
 
 		// generic 타입을 담는 ArrayList
-		ArrayList<String> list = new ArrayList<>(); // 문자를 여러개 담을 수 있는 Collection
+		ArrayList<String> list = new ArrayList<>(); // 문자를 여러개 담을 수 있는 Collection 
 		list.add("Hello");
 		list.add("World");
 		list.add("Welcome");
