@@ -11,8 +11,8 @@ public class Pair<T, M> { //원하는 타입을 유연하게 사용하게 위해
 	M model;
 	
 	//고정된 타입
-	int price;
-	String name;
+//	int price;
+//	String name;
 	
 	void setKind(T kind) {
 		this.kind = kind; 

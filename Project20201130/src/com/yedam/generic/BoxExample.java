@@ -27,6 +27,7 @@ public class BoxExample { //
 		List<String> list = new ArrayList<String>();
 //		List<String> list = new ArrayList<>(); -> 이렇게 작성해도 된다
 		
+		
 		list.add("Hello");
 //		list.add(10); 
 		//List는 Integer타입 받을 수 없음. 
@@ -35,6 +36,7 @@ public class BoxExample { //
 		//Apple클래스를 활용한 List 선언
 		List<Apple> appList = new ArrayList<>();
 		appList.add(new Apple());
+		
 	}
 
 }

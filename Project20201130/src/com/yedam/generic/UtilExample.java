@@ -16,7 +16,7 @@ public class UtilExample {
 		p1.setModel(100);
 
 		Pair<String, Integer> p2 = new Pair<String, Integer>();
-		p2.setKind("Hwang");
+		p2.setKind("HH");
 		p2.setModel(100);
 
 		if (Util.compare(p1, p2)) {

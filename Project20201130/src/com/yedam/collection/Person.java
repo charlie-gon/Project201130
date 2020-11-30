@@ -3,7 +3,7 @@
 
 package com.yedam.collection;
 
-public class Person {
+public class Person { //SetExample2와 연결
 	
 	//field
 	private String name;
@@ -19,6 +19,8 @@ public class Person {
 	}
 
 	
+	
+	//Shift+Alt+S => Generate hashcode and equals 클릭!
 	//HashCode와 equals를 기준으로 동일하다 하지않다를 판단
 	@Override
 	public int hashCode() {
