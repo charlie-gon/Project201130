@@ -1,7 +1,7 @@
 
 //201130
 //자바 컬렉션 연습문제 7
-
+//15장 연습문제 7
 package Practice;
 
 import java.util.ArrayList;
