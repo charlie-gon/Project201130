@@ -14,10 +14,11 @@ public class HashSetExample {
 		
 		Set<Student> set = new HashSet<Student>();
 		
-		set.add(new Student(1, "원더걸스"));
+		set.add(new Student(1, "Park"));
 		set.add(new Student(2, "엑소"));
-		set.add(new Student(1, "동방신기"));
+		set.add(new Student(1, "Park"));
 		
+		//같은 번호일 경우 중복 제거 후 출력하기
 		Iterator<Student> iterator = set.iterator();
 		while(iterator.hasNext()) {
 			Student student = iterator.next();

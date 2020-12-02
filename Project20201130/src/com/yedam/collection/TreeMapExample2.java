@@ -40,7 +40,7 @@ public class TreeMapExample2 {
 
 		}
 		for (int i = 0; i < intAry.length; i++) {
-			intAry[i] = num.pollFirst(); //크기별로 저장
+			intAry[i] = num.pollFirst(); //크기별로 저장	
 		}
 		for (int i = 0; i < intAry.length; i++) {
 			System.out.println(intAry[i]); //출력

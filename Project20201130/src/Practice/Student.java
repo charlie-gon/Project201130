@@ -16,17 +16,20 @@ public class Student {
 		this.name = name;
 	}
 
+
 	@Override
 	public int hashCode() {
-		return this.name.hashCode()	+ this.studentNum;
+		return studentNum + name.hashCode();
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
-		Student student = (Student) obj;
-//		boolean b1 = this.name.equals(student.name);
-		boolean b2 = this.studentNum == student.studentNum;
-		return b2;
+		
+			Student student = (Student) obj;
+			return (studentNum == student.studentNum) && (name.equals(student.name));
+		
+
 	}
 	
 	
