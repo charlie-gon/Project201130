@@ -1,6 +1,8 @@
 
 //201201
 //이진 트리 구조
+//Student 클래스와 연결
+
 
 package com.yedam.collection;
 

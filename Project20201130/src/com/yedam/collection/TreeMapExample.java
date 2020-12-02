@@ -5,6 +5,7 @@ package com.yedam.collection;
 
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.Map.Entry;
 
 public class TreeMapExample {
 	public static void main(String[] args) {
@@ -27,8 +28,46 @@ public class TreeMapExample {
 //			System.out.println(num);
 //		}
 		
-		for(Map.Entry<Integer, String> ent: scores.entrySet()) {
+		for(Map.Entry<Integer, String> ent : scores.entrySet()) {
 			System.out.println(ent.getKey() + " " + ent.getValue());
+			
 		}
+		System.out.println();
+		
+//		Entry<Integer, String> ent = scores.firstEntry(); //import하던지 Map.을 추가하여 Map 안의 중첩 클래스라는 것을 선언
+		Map.Entry<Integer, String> ent = scores.firstEntry(); 
+		
+		ent.getKey(); //가장 작은 부분 key
+		ent.getValue(); //가장 작은 부분 value
+		
+		//가장 낮은 점수 구하기
+		System.out.println("가장 낮은 점수: " + ent.getKey() + " " + ent.getValue());
+		
+		ent = scores.lastEntry();
+		ent.getKey(); //가장 큰 부분 key
+		ent.getValue(); //가장 큰 부분 value
+		
+		//가장 높은 점수
+		System.out.println("가장 높은 점수: " + ent.getKey() + " " + ent.getValue());
+		
+		ent = scores.lowerEntry(95);
+		System.out.println("95점 바로 아래 값: " + ent.getKey());
+
+		ent = scores.higherEntry(87);
+		System.out.println("87 바로 위 값: " + ent.getKey());
+
+		ent = scores.floorEntry(77);
+		System.out.println("77점 혹은 바로 아래 값: " + ent.getKey());
+		
+		ent = scores.ceilingEntry(66);
+		System.out.println("66점 혹은 바로 위 값: " + ent.getKey());
+		
+		while(!scores.isEmpty()) {
+			ent = scores.pollFirstEntry();
+			System.out.println(ent.getKey() + " " + ent.getValue() + " 남은 객체 수 " + scores.size());
+			
+			
+		}
+		
 	}
 }
