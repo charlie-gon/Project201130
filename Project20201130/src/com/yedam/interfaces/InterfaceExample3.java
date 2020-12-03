@@ -22,12 +22,24 @@ public class InterfaceExample3 {
 	public static void main(String[] args) {
 
 		
+		//인터페이스 하나로 구하기
+		
+		Circle circle = null;
 		// 원의 넓이 = 반지름 제곱 * 3.14(pi)
-		Circle circle = (radius) -> {
+		circle = (radius) -> {
 			double pi = 3.14;
 			System.out.println("원의 넓이: " + (radius*2)*pi);
 		};
 		circle.run(2);
+		
+		//삼각형
+		circle = (radius) -> {
+			int result = (radius*5)/2;
+		};
+		circle.run(6);
+		
+		
+		//인터페이스 여러개로 구하기
 		
 		// 밑변으로 가지는 삼각형의 넓이 = 밑변 * 높이 / 2
 		Triangle triangle = (base, height) -> {
